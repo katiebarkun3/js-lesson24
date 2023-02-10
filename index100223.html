@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /* 1 */
+        /* class Car {
+            constructor (color, speed, mark){
+                this.color = color;
+                this.speed = speed;
+                this.mark = mark;
+            }
+            getInfo() {
+                console.log(`Марка автомобиля: ${this.mark}, его цвет ${this.color}
+                cкорость: ${this.speed} км/ч`);
+                
+            }
+    
+        }
+        let car1 = new Car('black', 90, 'BMW');
+        car1.getInfo(); */
+
+
+        /* 2 */
+        class Person {
+            #name;
+            #age;
+            constructor(val1){
+                this.#name = 'Alex';
+                this.#age = 32;
+                this.val1 = val1;
+            }
+            getInfo(){
+                console.log(`name ${Element.#name}, age ${Element.#age}, sex ${this.val1}`);
+            }
+            setName(name){
+                this.#name = name;
+            }
+            setAge(age){
+                this.#age = age;
+            }
+            getSex(){
+                console.log(`sex: ${this.val1}`);
+            }
+        }
+
+        let pers = new Person('m');
+        pers.getInfo();
+        pers.setAge(14);
+        pers.setName('John');
+        pers.getInfo();
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
